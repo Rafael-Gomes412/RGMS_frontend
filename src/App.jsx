@@ -16,6 +16,11 @@ import Contact from './pages/Contact'
 import FAQ from './pages/FAQ'
 import Mentions from './pages/Mentions'
 import Community from './pages/Community'
+
+// AJOUT DES IMPORTS POUR LE BLOG
+import Blog from './pages/Blog'
+import BlogDetail from './pages/BlogDetail'
+
 function App() {
   const location = useLocation()
   const transparentPages = ['/']
@@ -41,6 +46,10 @@ function App() {
           <Route path="/faq" element={<FAQ />} />
           <Route path="/mentions" element={<Mentions />} />
           <Route path="/community" element={<Community />} />
+          
+         
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogDetail />} />
         </Routes>
       </div>
       <Footer />

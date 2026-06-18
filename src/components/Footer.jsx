@@ -52,13 +52,17 @@ function Footer() {
               À propos
             </h3>
             <Link to="/about" className="text-gray-400 hover:text-white text-sm transition">
-              About us
+              A propos de nous
             </Link>
             <Link to="/contact" className="text-gray-400 hover:text-white text-sm transition">
               Nous joindre
             </Link>
             <Link to="/community" className="text-gray-400 hover:text-white text-sm transition">
               Notre communauté
+            </Link>
+            {/* Lien Blog rajouté pour le SEO */}
+            <Link to="/blog" className="text-gray-400 hover:text-white text-sm transition font-medium text-amber-400/90">
+              Notre Blog
             </Link>
           </div>
 
