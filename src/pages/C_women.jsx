@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { LuSlidersHorizontal, LuX } from 'react-icons/lu'
 import api from '../api/axios'
+import api, { getImageUrl } from '../api/axios'
 
 const sizes = ['XS', 'S', 'M', 'L', 'XL', 'XXL']
 
@@ -224,7 +225,7 @@ function CWomen() {
                 >
                   <div className="aspect-[3/4] overflow-hidden bg-gray-100">
                     <img
-                      src={product.image || '/placeholder.jpg'}
+                      src={getImageUrl(product.image)}
                       alt={product.name}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />

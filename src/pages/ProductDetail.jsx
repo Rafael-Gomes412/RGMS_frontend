@@ -86,7 +86,7 @@ function ProductDetail() {
           {/* Grande image */}
           <div className="flex-1 aspect-[3/4] overflow-hidden bg-gray-100 sticky top-24 h-fit">
             <img
-              src={images[selectedImage] || '/placeholder.jpg'}
+             src={getImageUrl(product.image)}
               alt={product.name}
               className="w-full h-full object-cover transition-all duration-300"
             />
