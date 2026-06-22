@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { LuSlidersHorizontal, LuX } from 'react-icons/lu'
 import api from '../api/axios'
+import api, { getImageUrl } from '../api/axios'
 
 const sizes = ['XS', 'S', 'M', 'L', 'XL', 'XXL']
 
